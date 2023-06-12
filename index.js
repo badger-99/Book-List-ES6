@@ -1,8 +1,8 @@
 //  Imports
 import bookTemplate from './modules/bookTemplate.js';
-import UtilityFunctions from './modules/utilityFunctions.js'
-import BookCollection from './modules/bookCollection.js'
-import Book from './modules/book.js'
+import UtilityFunctions from './modules/utilityFunctions.js';
+import BookCollection from './modules/bookCollection.js';
+import Book from './modules/book.js';
 
 // Variables
 const bookList = document.querySelector('#book-list');
@@ -13,7 +13,7 @@ const list = document.getElementById('list');
 const addNew = document.getElementById('add-new');
 const contact = document.getElementById('contact');
 const heading = document.getElementById('header-name');
-const dateDiv = document.getElementById('date');
+// const dateDiv = document.getElementById('date');
 const title = document.querySelector('#title');
 const author = document.querySelector('#author');
 
@@ -37,7 +37,7 @@ bookForm.addEventListener('submit', (e) => {
 bookList.addEventListener('click', (event) => {
   if (event.target.classList.contains('remove')) {
     const bookNum = event.target.dataset.index;
-    idx = parseInt(bookNum, 10);
+    const idx = parseInt(bookNum, 10);
     UtilityFunctions.removeBook(bookArray, idx);
     UtilityFunctions.showBooks(bookList, bookTemplate);
   }

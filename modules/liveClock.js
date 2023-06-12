@@ -1,4 +1,4 @@
-const liveClock = () => {
+const liveClock = (dateDiv) => {
   const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
   const months = [
     'Jan',
@@ -21,14 +21,14 @@ const liveClock = () => {
     }
     return number;
   };
-    const date = new Date();
-    const time = `${weekdays[date.getDay()]} ${
-      months[date.getMonth()]
-    } ${leadingZero(date.getDate())} ${date.getFullYear()} ${leadingZero(
-      date.getHours()
-    )}:${leadingZero(date.getMinutes())}:${leadingZero(date.getSeconds())}`;
-    dateDiv.innerHTML = time;
-}
+  const date = new Date();
+  const time = `${weekdays[date.getDay()]} ${
+    months[date.getMonth()]
+  } ${leadingZero(date.getDate())} ${date.getFullYear()} ${leadingZero(
+    date.getHours(),
+  )}:${leadingZero(date.getMinutes())}:${leadingZero(date.getSeconds())}`;
+  dateDiv.innerHTML = time;
+};
 
 export default liveClock;
 
