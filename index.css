@@ -81,7 +81,8 @@ main {
 
 #book-list {
   max-height: 17.2rem;
-  overflow-y: scroll;
+  overflow-y: auto;
+  text-align: center;
 }
 
 .book {
