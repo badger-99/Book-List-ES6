@@ -3,6 +3,7 @@ import bookTemplate from './modules/bookTemplate.js';
 import UtilityFunctions from './modules/utilityFunctions.js';
 import BookCollection from './modules/bookCollection.js';
 import Book from './modules/book.js';
+import { DateTime } from './node_modules/luxon/build/es6/luxon.js';
 
 // Variables
 const bookList = document.querySelector('#book-list');
@@ -13,7 +14,7 @@ const list = document.getElementById('list');
 const addNew = document.getElementById('add-new');
 const contact = document.getElementById('contact');
 const heading = document.getElementById('header-name');
-// const dateDiv = document.getElementById('date');
+const dateDiv = document.getElementById('date');
 const title = document.querySelector('#title');
 const author = document.querySelector('#author');
 
@@ -67,3 +68,11 @@ contact.addEventListener('click', (e) => {
   contactDetails.classList.remove('hidden');
   heading.innerHTML = 'Contact Information';
 });
+
+const liveClock = () => {
+  const now = DateTime.now();
+  const formattedDate = now.toFormat('FF');
+  dateDiv.innerHTML = formattedDate;
+};
+
+setInterval(liveClock, 1000)
