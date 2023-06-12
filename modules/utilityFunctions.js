@@ -9,9 +9,8 @@ class UtilityFunctions {
     const retrievedBooks = JSON.parse(localStorage.getItem('bookData'));
     if (retrievedBooks && Array.isArray(retrievedBooks)) {
       return retrievedBooks;
-    } else {
-      return []; // Return an empty array if storage is empty or not an array
     }
+    return []; // Return an empty array if storage is empty or not an array
   };
 
   // Showing books on browser  -> uses container
@@ -22,7 +21,7 @@ class UtilityFunctions {
         .map((book, index) => template(book, index))
         .join('');
     } else {
-      element.innerHTML = `<h2>There are no books in storage</h2>`;
+      element.innerHTML = '<h2>There are no books in storage</h2>';
     }
   };
 
