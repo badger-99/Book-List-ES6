@@ -1,8 +1,8 @@
 //  Imports
 import bookTemplate from './modules/bookTemplate.js';
-import UtilityFunctions from './modules/UtilityFunctions.js';
-import BookCollection from './modules/BookCollection.js';
-import Book from './modules/Book.js';
+import UtilityFunctions from './modules/utilityFunctions.js';
+import BookCollection from './modules/bookCollection.js';
+import Book from './modules/book.js';
 
 // Variables
 const bookList = document.querySelector('#book-list');
