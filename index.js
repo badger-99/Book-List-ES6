@@ -1,9 +1,9 @@
 //  Imports
+import { DateTime } from 'luxon';
 import bookTemplate from './modules/bookTemplate.js';
 import UtilityFunctions from './modules/utilityFunctions.js';
 import BookCollection from './modules/bookCollection.js';
 import Book from './modules/book.js';
-import { DateTime } from 'luxon';
 
 // Variables
 const bookList = document.querySelector('#book-list');
