@@ -75,4 +75,4 @@ const liveClock = () => {
   dateDiv.innerHTML = formattedDate;
 };
 
-setInterval(liveClock, 1000)
+setInterval(liveClock, 1000);
