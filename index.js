@@ -1,5 +1,5 @@
 //  Imports
-import { DateTime } from 'luxon';
+import { DateTime } from './modules/luxon.js';
 import bookTemplate from './modules/bookTemplate.js';
 import UtilityFunctions from './modules/utilityFunctions.js';
 import BookCollection from './modules/bookCollection.js';

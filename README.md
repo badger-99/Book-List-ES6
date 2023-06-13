@@ -62,7 +62,6 @@ To get a local copy up and running, follow these steps.
 - Clone this project.
 - Open it in VS code.
 - Run `npm install --save luxon` to download Luxon
-- If you dont use Webpack, change the luxon import statement to `import { DateTime } from './node_modules/luxon/build/es6/luxon.js';`
 - Deploy it on a browser using a live-server plug-in.
 
 ### Prerequisites
@@ -113,6 +112,7 @@ You can deploy this project by using VS-code and injecting it to a browser throu
 
 ## 🔭 Future Features <a name="future-features"></a>
 
+- [ ] **[A contact form]**
 - [ ] **[A Mobile-friendly version]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
